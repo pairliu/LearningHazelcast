@@ -8,6 +8,7 @@ import com.hazelcast.core.Hazelcast;
 public class GettingStarted {
     public static void main(String[] args) {
         Map<Integer, String> mapCustomers = Hazelcast.getMap("customers");
+        
         mapCustomers.put(1, "Joe");
         mapCustomers.put(2, "Ali");
         mapCustomers.put(3, "Avi");
